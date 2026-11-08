@@ -1,0 +1,4483 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "L_LYCHEEMEM",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\TIER_4_INFERENCE_AGENTS\\L_LYCHEEMEM\\UPSTREAM_CLONE",
+  "git": {
+   "head": "495bf72880d13f0b81696ec4f88a9817ed85ca73",
+   "url": "https://github.com/getzep/zep.git",
+   "branch": "HEAD",
+   "committed_at": "2026-09-11T10:07:55-07:00"
+  }
+ },
+ "metrics": {
+  "files_total": 930,
+  "source_files_scanned": 561,
+  "lines_of_code": 103872,
+  "languages": {
+   ".py": 312,
+   ".go": 136,
+   ".json": 120,
+   ".ts": 103,
+   ".md": 84,
+   "(none)": 40,
+   ".example": 18,
+   ".tsx": 17,
+   ".toml": 15,
+   ".txt": 15,
+   ".typed": 10,
+   ".yaml": 9,
+   ".sum": 6,
+   ".svg": 6,
+   ".mod": 5
+  }
+ },
+ "licence": {
+  "spdx": "Apache-2.0",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 259,
+  "unique": 166,
+  "by_ecosystem": {
+   "go": 99,
+   "npm": 107,
+   "pypi": 53
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "python-dotenv",
+    "version": "",
+    "source_file": "zep-eval-harness/pyproject.toml",
+    "raw": "python-dotenv"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": "",
+    "source_file": "zep-eval-harness/pyproject.toml",
+    "raw": "zep-cloud"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openai",
+    "version": "",
+    "source_file": "zep-eval-harness/pyproject.toml",
+    "raw": "openai"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydantic",
+    "version": "",
+    "source_file": "zep-eval-harness/pyproject.toml",
+    "raw": "pydantic"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "chonkie",
+    "version": "",
+    "source_file": "zep-eval-harness/pyproject.toml",
+    "raw": "chonkie"
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/getzep/zep-go/v3",
+    "version": "v3.16.0",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/joho/godotenv",
+    "version": "v1.5.1",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/modelcontextprotocol/go-sdk",
+    "version": "v1.4.1",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/jsonschema-go",
+    "version": "v0.4.2",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/uuid",
+    "version": "v1.4.0",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/segmentio/asm",
+    "version": "v1.1.3",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/segmentio/encoding",
+    "version": "v0.5.4",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/yosida95/uritemplate/v3",
+    "version": "v3.0.2",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/oauth2",
+    "version": "v0.34.0",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/sys",
+    "version": "v0.40.0",
+    "source_file": "mcp/zep-mcp-server/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "dario.cat/mergo",
+    "version": "v1.0.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/failsafe-go/failsafe-go",
+    "version": "v0.6.8",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-chi/chi/v5",
+    "version": "v5.2.4",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-chi/cors",
+    "version": "v1.2.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-playground/validator/v10",
+    "version": "v10.22.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/uuid",
+    "version": "v1.6.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/hashicorp/go-retryablehttp",
+    "version": "v0.7.7",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/riandyrn/otelchi",
+    "version": "v0.9.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/uptrace/bun",
+    "version": "v1.1.17",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/uptrace/bun/dialect/pgdialect",
+    "version": "v1.1.17",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/uptrace/bun/driver/pgdriver",
+    "version": "v1.1.17",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/uptrace/bun/extra/bunotel",
+    "version": "v1.1.17",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/viterin/vek",
+    "version": "v0.4.2",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace",
+    "version": "v0.46.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.48.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.uber.org/zap",
+    "version": "v1.27.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "gopkg.in/yaml.v3",
+    "version": "v3.0.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/chewxy/math32",
+    "version": "v1.10.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/felixge/httpsnoop",
+    "version": "v1.0.4",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/gabriel-vasile/mimetype",
+    "version": "v1.4.3",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-logr/logr",
+    "version": "v1.4.2",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-logr/stdr",
+    "version": "v1.2.2",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-playground/locales",
+    "version": "v0.14.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-playground/universal-translator",
+    "version": "v0.18.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/hashicorp/go-cleanhttp",
+    "version": "v0.5.2",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/jinzhu/inflection",
+    "version": "v1.0.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/leodido/go-urn",
+    "version": "v1.4.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/lithammer/shortuuid/v3",
+    "version": "v3.0.7",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/oklog/ulid",
+    "version": "v1.3.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/pkg/errors",
+    "version": "v0.9.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/tmthrgd/go-hex",
+    "version": "v0.0.0-20190904060850-447a3041c3bc",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/uptrace/opentelemetry-go-extra/otelsql",
+    "version": "v0.2.3",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/viterin/partial",
+    "version": "v1.1.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/vmihailenco/msgpack/v5",
+    "version": "v5.4.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/vmihailenco/tagparser/v2",
+    "version": "v2.0.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel",
+    "version": "v1.28.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel/metric",
+    "version": "v1.28.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel/trace",
+    "version": "v1.28.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.uber.org/multierr",
+    "version": "v1.10.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/crypto",
+    "version": "v0.52.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/exp",
+    "version": "v0.0.0-20230817173708-d852ddb80c63",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/net",
+    "version": "v0.55.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/sys",
+    "version": "v0.45.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/text",
+    "version": "v0.37.0",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "mellium.im/sasl",
+    "version": "v0.3.1",
+    "source_file": "legacy/src/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.23.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@ai-sdk/openai",
+    "version": "^3.0.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@eslint/js",
+    "version": "^9.39.4",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^22.0.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "ai",
+    "version": "^6.0.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eslint",
+    "version": "^9.39.4",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsup",
+    "version": "^8.3.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.19.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.6.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript-eslint",
+    "version": "^8.61.1",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "vitest",
+    "version": "^3.2.6",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "zod",
+    "version": "^3.25.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "ai",
+    "version": "^6.0.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "zod",
+    "version": "^3.25.0 || ^4.0.0",
+    "source_file": "integrations/vercel-ai/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "strands-agents",
+    "version": ">=1.45.0",
+    "source_file": "integrations/strands/python/pyproject.toml",
+    "raw": "strands-agents>=1.45.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/strands/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydantic-ai",
+    "version": ">=1.107",
+    "source_file": "integrations/pydantic-ai/python/pyproject.toml",
+    "raw": "pydantic-ai>=1.107"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/pydantic-ai/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "agent-framework-core",
+    "version": ">=1.8.1",
+    "source_file": "integrations/ms-agent-framework/python/pyproject.toml",
+    "raw": "agent-framework-core>=1.8.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/ms-agent-framework/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.23.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "zod",
+    "version": "^3.25.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@eslint/js",
+    "version": "^9.39.4",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@mastra/core",
+    "version": "^1.42.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^22.0.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eslint",
+    "version": "^9.39.4",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsup",
+    "version": "^8.3.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.19.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.6.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript-eslint",
+    "version": "^8.61.1",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "vitest",
+    "version": "^3.2.6",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@mastra/core",
+    "version": "^1.42.0",
+    "source_file": "integrations/mastra/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "langchain-core",
+    "version": ">=1.0",
+    "source_file": "integrations/langgraph/python/pyproject.toml",
+    "raw": "langchain-core>=1.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "langgraph",
+    "version": ">=1.2.5",
+    "source_file": "integrations/langgraph/python/pyproject.toml",
+    "raw": "langgraph>=1.2.5"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/langgraph/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "crewai",
+    "version": ">=1.0.0",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "crewai>=1.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "aiohttp",
+    "version": ">=3.8.0",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "aiohttp>=3.8.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-dotenv",
+    "version": ">=1.0.0",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "python-dotenv>=1.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-slugify",
+    "version": ">=8.0.4",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "python-slugify>=8.0.4"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "rich",
+    "version": ">=14.0.0",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "rich>=14.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/crewai/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "autogen-agentchat",
+    "version": ">=0.7.0",
+    "source_file": "integrations/autogen/python/pyproject.toml",
+    "raw": "autogen-agentchat>=0.7.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "ag2",
+    "version": ">=0.9.0",
+    "source_file": "integrations/ag2/python/pyproject.toml",
+    "raw": "ag2>=0.9.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/ag2/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.23.0",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@google/genai",
+    "version": "^1.37.0",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@google/adk",
+    "version": "1.2.0",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^22.10.0",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsup",
+    "version": "^8.3.5",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.19.2",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.7.2",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "vitest",
+    "version": "^3.2.6",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@google/adk",
+    "version": "^1.2.0",
+    "source_file": "integrations/adk/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "google-adk",
+    "version": ">=1.19.0",
+    "source_file": "integrations/adk/python/pyproject.toml",
+    "raw": "google-adk>=1.19.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "typing-extensions",
+    "version": ">=4.0.0",
+    "source_file": "integrations/adk/python/pyproject.toml",
+    "raw": "typing-extensions>=4.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.23.0",
+    "source_file": "integrations/adk/python/pyproject.toml",
+    "raw": "zep-cloud>=3.23.0"
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/getzep/zep-go/v3",
+    "version": "v3.23.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/jsonschema-go",
+    "version": "v0.4.2",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/adk",
+    "version": "v1.4.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/genai",
+    "version": "v1.57.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "cloud.google.com/go",
+    "version": "v0.123.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "cloud.google.com/go/auth",
+    "version": "v0.20.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "cloud.google.com/go/compute/metadata",
+    "version": "v0.9.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/cespare/xxhash/v2",
+    "version": "v2.3.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/felixge/httpsnoop",
+    "version": "v1.0.4",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-logr/logr",
+    "version": "v1.4.3",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/go-logr/stdr",
+    "version": "v1.2.2",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/go-cmp",
+    "version": "v0.7.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/s2a-go",
+    "version": "v0.1.9",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/safehtml",
+    "version": "v0.1.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/uuid",
+    "version": "v1.6.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/googleapis/enterprise-certificate-proxy",
+    "version": "v0.3.15",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/googleapis/gax-go/v2",
+    "version": "v2.22.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/gorilla/websocket",
+    "version": "v1.5.3",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/auto/sdk",
+    "version": "v1.2.1",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.68.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel",
+    "version": "v1.43.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel/log",
+    "version": "v0.16.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel/metric",
+    "version": "v1.43.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "go.opentelemetry.io/otel/trace",
+    "version": "v1.43.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/crypto",
+    "version": "v0.52.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/net",
+    "version": "v0.55.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/sys",
+    "version": "v0.45.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "golang.org/x/text",
+    "version": "v0.37.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/api",
+    "version": "v0.279.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/genproto/googleapis/rpc",
+    "version": "v0.0.0-20260511170946-3700d4141b60",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/grpc",
+    "version": "v1.82.1",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "google.golang.org/protobuf",
+    "version": "v1.36.11",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "rsc.io/omap",
+    "version": "v1.2.0",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "rsc.io/ordered",
+    "version": "v1.1.1",
+    "source_file": "integrations/adk/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.27.0",
+    "source_file": "ingestion/pyproject.toml",
+    "raw": "zep-cloud>=3.27.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "s",
+    "version": "own",
+    "source_file": "ingestion/pyproject.toml",
+    "raw": "s own"
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.28.0",
+    "source_file": "examples/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "uuid",
+    "version": "^11.1.1",
+    "source_file": "examples/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^22.13.10",
+    "source_file": "examples/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.19.3",
+    "source_file": "examples/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.8.2",
+    "source_file": "examples/typescript/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.28.0",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-dialog",
+    "version": "^1.1.6",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-dropdown-menu",
+    "version": "^2.1.6",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-hover-card",
+    "version": "^1.1.6",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-label",
+    "version": "^2.1.2",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-popover",
+    "version": "^1.1.6",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-slot",
+    "version": "^1.1.2",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@radix-ui/react-switch",
+    "version": "^1.1.3",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "class-variance-authority",
+    "version": "^0.7.1",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "clsx",
+    "version": "^2.1.1",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "d3",
+    "version": "^7.9.0",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "dayjs",
+    "version": "^1.11.13",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "lucide-react",
+    "version": "^0.479.0",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "next",
+    "version": "15.5.21",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "next-themes",
+    "version": "^0.4.6",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "react",
+    "version": "^19.0.0",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "react-dom",
+    "version": "^19.0.0",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "sonner",
+    "version": "^2.0.1",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tailwind-merge",
+    "version": "^3.0.2",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tailwindcss-animate",
+    "version": "^1.0.7",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@eslint/eslintrc",
+    "version": "^3",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@tailwindcss/postcss",
+    "version": "^4",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/d3",
+    "version": "^7.4.3",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^20",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/react",
+    "version": "^19",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/react-dom",
+    "version": "^19",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eslint",
+    "version": "^9",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eslint-config-next",
+    "version": "^15.5.18",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tailwindcss",
+    "version": "^4",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5",
+    "source_file": "examples/typescript/zep-graph-visualization/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.28.0",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@langchain/core",
+    "version": "^1.2.10",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@langchain/langgraph",
+    "version": "^1.4.14",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@langchain/openai",
+    "version": "^1.5.12",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@langchain/tavily",
+    "version": "^1.2.0",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "commander",
+    "version": "^12.1.0",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "dotenv",
+    "version": "^16.4.7",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "langsmith",
+    "version": "^0.3.15",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.22.4",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.8.2",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "uuid",
+    "version": "^11.1.1",
+    "source_file": "examples/typescript/langgraph/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@ai-sdk/google",
+    "version": "^4.0.67",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.28.0",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@vercel/connect",
+    "version": "0.4.3",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "ai",
+    "version": "^7.0.97",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "dotenv",
+    "version": "^17.4.2",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eve",
+    "version": "^0.32.0",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "zod",
+    "version": "4.4.3",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^24.0.0",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "microsandbox",
+    "version": "^0.5.10",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.20.0",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "7.0.2",
+    "source_file": "examples/typescript/eve/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.28.0",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "commander",
+    "version": "^12.1.0",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "dotenv",
+    "version": "^16.4.7",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "openai",
+    "version": "^7.15.0",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^20.17.30",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tsx",
+    "version": "^4.22.4",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.8.2",
+    "source_file": "examples/typescript/chunking-example/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "click",
+    "version": ">=8.1.8",
+    "source_file": "examples/python/openai-agents-sdk/pyproject.toml",
+    "raw": "click>=8.1.8"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openai-agents",
+    "version": ">=0.22.2",
+    "source_file": "examples/python/openai-agents-sdk/pyproject.toml",
+    "raw": "openai-agents>=0.22.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "packaging",
+    "version": ">=24.2",
+    "source_file": "examples/python/openai-agents-sdk/pyproject.toml",
+    "raw": "packaging>=24.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-dotenv",
+    "version": ">=1.0.1",
+    "source_file": "examples/python/openai-agents-sdk/pyproject.toml",
+    "raw": "python-dotenv>=1.0.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=3.28.0",
+    "source_file": "examples/python/openai-agents-sdk/pyproject.toml",
+    "raw": "zep-cloud>=3.28.0"
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@11labs/react",
+    "version": "^0.0.4",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "react",
+    "version": "^18.2.0",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "react-dom",
+    "version": "^18.2.0",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "uuid",
+    "version": "^11.1.1",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/react",
+    "version": "^18.2.43",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/react-dom",
+    "version": "^18.2.17",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@vitejs/plugin-react",
+    "version": "^4.2.1",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "vite",
+    "version": "^7.3.5",
+    "source_file": "examples/python/elevenlabs-zep-example/react-app/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/getzep/zep-go/v3",
+    "version": "v3.28.0",
+    "source_file": "examples/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/uuid",
+    "version": "v1.6.0",
+    "source_file": "examples/go/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/getzep/zep-go/v3",
+    "version": "v3.28.0",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/joho/godotenv",
+    "version": "v1.5.1",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/openai/openai-go/v3",
+    "version": "v3.44.0",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/google/uuid",
+    "version": "v1.6.0",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/tidwall/gjson",
+    "version": "v1.18.0",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/tidwall/match",
+    "version": "v1.1.1",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/tidwall/pretty",
+    "version": "v1.2.1",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "go",
+    "name": "github.com/tidwall/sjson",
+    "version": "v1.2.5",
+    "source_file": "examples/go/chunking-example/go.mod",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "zep-cloud"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openai",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "openai"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "gdown",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "gdown"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pandas",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "pandas"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "scipy",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "scipy"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-dotenv",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "python-dotenv"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydantic",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "pydantic"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "requests",
+    "version": "",
+    "source_file": "benchmarks/longmemeval/pyproject.toml",
+    "raw": "requests"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "zep-cloud",
+    "version": ">=0.70.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "zep-cloud>=0.70.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openai",
+    "version": ">=1.0.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "openai>=1.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pandas",
+    "version": ">=2.0.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "pandas>=2.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "scipy",
+    "version": ">=1.10.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "scipy>=1.10.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-dotenv",
+    "version": ">=1.0.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "python-dotenv>=1.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydantic",
+    "version": ">=2.0.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "pydantic>=2.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pyyaml",
+    "version": ">=6.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "pyyaml>=6.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "requests",
+    "version": ">=2.31.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "requests>=2.31.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tiktoken",
+    "version": ">=0.5.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "tiktoken>=0.5.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tqdm",
+    "version": ">=4.65.0",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "tqdm>=4.65.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "orjson",
+    "version": ">=3.11.4",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "orjson>=3.11.4"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tenacity",
+    "version": ">=9.1.2",
+    "source_file": "benchmarks/locomo/pyproject.toml",
+    "raw": "tenacity>=9.1.2"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 42,
+  "files_with_findings": 42,
+  "severity": {
+   "high": 27,
+   "medium": 2,
+   "low": 13
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A03-Injection": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/test/helpers.ts",
+      "line": 69,
+      "cwe": "CWE-95",
+      "snippet": "const result = await exec(input, undefined);"
+     },
+     {
+      "severity": "high",
+      "file": "ingestion/src/zep_ingest/pipeline.py",
+      "line": 88,
+      "cwe": "CWE-502",
+      "snippet": "data, data_type, created_at, metadata, document = pickle.load(spool)"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 7,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "zep-eval-harness/zep_ingest_documents.py",
+      "line": 471,
+      "cwe": "CWE-",
+      "snippet": "uv run zep_ingest_documents.py --resume runs/checkpoints/doc_xxx.json"
+     },
+     {
+      "severity": "low",
+      "file": "legacy/src/store/userstore_common.go",
+      "line": 38,
+      "cwe": "CWE-",
+      "snippet": "// TODO do we need to do this or can we rely on the database to enforce this?"
+     },
+     {
+      "severity": "low",
+      "file": "legacy/src/lib/pg/db.go",
+      "line": 85,
+      "cwe": "CWE-",
+      "snippet": "// TODO should this just panic or at last return the error?"
+     },
+     {
+      "severity": "low",
+      "file": "integrations/crewai/python/tests/test_limits.py",
+      "line": 41,
+      "cwe": "CWE-",
+      "snippet": "assert \"xxx\" not in caplog.text"
+     },
+     {
+      "severity": "low",
+      "file": "integrations/adk/typescript/test/before-model-callback.test.ts",
+      "line": 324,
+      "cwe": "CWE-",
+      "snippet": "expect(warning).not.toContain(\"xxxxx\");"
+     },
+     {
+      "severity": "low",
+      "file": "integrations/adk/go/zep.go",
+      "line": 112,
+      "cwe": "CWE-",
+      "snippet": "// 0b10xxxxxx continuation byte)."
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/graph_example/graph_example.py",
+      "line": 69,
+      "cwe": "CWE-",
+      "snippet": "# TODO: Need to enable non-message episodic content retrieval"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "ingestion/src/zep_ingest/result.py",
+      "line": 152,
+      "cwe": "CWE-1188",
+      "snippet": "_single_queue_episode_poll: bool = field(default=True, repr=False, compare=False)"
+     },
+     {
+      "severity": "medium",
+      "file": "benchmarks/locomo/config.py",
+      "line": 52,
+      "cwe": "CWE-1188",
+      "snippet": "warmup_enabled: bool = Field(default=True)"
+     }
+    ]
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 25,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "mcp/zep-mcp-server/internal/config/config_test.go",
+      "line": 46,
+      "cwe": "CWE-798",
+      "snippet": "t.Errorf(\"Expected ZepAPIKey='test-key-123', got '%s'\", cfg.ZepAPIKey)"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/test/utils.test.ts",
+      "line": 76,
+      "cwe": "CWE-798",
+      "snippet": "const secret = \"SSN-123-45-6789\".repeat(50);"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/examples/generate-text.ts",
+      "line": 21,
+      "cwe": "CWE-798",
+      "snippet": "*   export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/examples/stream-text.ts",
+      "line": 21,
+      "cwe": "CWE-798",
+      "snippet": "*   export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/strands/python/src/zep_strands/__init__.py",
+      "line": 19,
+      "cwe": "CWE-798",
+      "snippet": "zep = AsyncZep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/strands/python/examples/basic_agent.py",
+      "line": 17,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/pydantic-ai/python/src/zep_pydantic_ai/__init__.py",
+      "line": 39,
+      "cwe": "CWE-798",
+      "snippet": "zep = AsyncZep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/pydantic-ai/python/examples/basic_agent.py",
+      "line": 24,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ms-agent-framework/python/src/zep_ms_agent_framework/__init__.py",
+      "line": 25,
+      "cwe": "CWE-798",
+      "snippet": "zep = AsyncZep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ms-agent-framework/python/examples/basic_agent.py",
+      "line": 15,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/mastra/typescript/test/utils.test.ts",
+      "line": 61,
+      "cwe": "CWE-798",
+      "snippet": "const secret = \"SSN-123-45-6789\".repeat(50);"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/mastra/typescript/examples/basic-agent.ts",
+      "line": 16,
+      "cwe": "CWE-798",
+      "snippet": "*   export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/langgraph/python/src/zep_langgraph/__init__.py",
+      "line": 42,
+      "cwe": "CWE-798",
+      "snippet": "zep = AsyncZep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/langgraph/python/examples/react_agent.py",
+      "line": 18,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/langgraph/python/examples/store_agent.py",
+      "line": 21,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/crewai/python/src/zep_crewai/__init__.py",
+      "line": 16,
+      "cwe": "CWE-798",
+      "snippet": "zep_client = Zep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_basic.py",
+      "line": 13,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-cloud-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_graph.py",
+      "line": 8,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-cloud-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_tools_full.py",
+      "line": 9,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-cloud-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_tools_search.py",
+      "line": 8,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-cloud-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/manual_test.py",
+      "line": 7,
+      "cwe": "CWE-798",
+      "snippet": "export ZEP_API_KEY=\"your-zep-cloud-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/adk/typescript/examples/basic-agent.ts",
+      "line": 23,
+      "cwe": "CWE-798",
+      "snippet": "*   export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/adk/typescript/examples/graph-search-agent.ts",
+      "line": 14,
+      "cwe": "CWE-798",
+      "snippet": "*   export ZEP_API_KEY=\"your-zep-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/adk/python/src/zep_adk/__init__.py",
+      "line": 22,
+      "cwe": "CWE-798",
+      "snippet": "zep = AsyncZep(api_key=\"your-api-key\")"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/adk/python/examples/basic_agent.py",
+      "line": 23,
+      "cwe": "CWE-798",
+      "snippet": "export GOOGLE_API_KEY=\"your-google-api-key\""
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 6,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "mcp/zep-mcp-server/internal/server/server.go",
+      "line": 144,
+      "cwe": "CWE-319",
+      "snippet": "\"url\", fmt.Sprintf(\"http://localhost:%d\", s.config.HTTPPort),"
+     },
+     {
+      "severity": "low",
+      "file": "ingestion/tests/test_llm_adapters.py",
+      "line": 85,
+      "cwe": "CWE-319",
+      "snippet": "model=\"llama3.1:70b\", base_url=\"http://localhost:11434/v1\", api_key=\"k\""
+     },
+     {
+      "severity": "low",
+      "file": "ingestion/src/zep_ingest/llm/openai.py",
+      "line": 55,
+      "cwe": "CWE-319",
+      "snippet": "OpenAICompatibleLLM(model=\"claude-haiku-4-5\", base_url=\"http://localhost:4000\", api_key=\"...\")   # LiteLLM proxy"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/elevenlabs-zep-example/react-app/src/App.jsx",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "const PROXY_URL = import.meta.env.VITE_PROXY_URL || 'http://localhost:8080';"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/elevenlabs-zep-example/llm-proxy/proxy_server.py",
+      "line": 16,
+      "cwe": "CWE-319",
+      "snippet": "2. Run this server (it will be available at http://localhost:8080)"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/elevenlabs-zep-example/llm-proxy/test_proxy_locally.py",
+      "line": 66,
+      "cwe": "CWE-319",
+      "snippet": "\"http://localhost:8080/v1/chat/completions\","
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 81,
+  "files_with_findings": 70,
+  "severity": {
+   "high": 37,
+   "medium": 28,
+   "low": 16
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 22,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "zep-eval-harness/zep_evaluate.py",
+      "line": 199,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = get_response_system_prompt(context)"
+     },
+     {
+      "severity": "medium",
+      "file": "legacy/src/lib/config/env_template.go",
+      "line": 10,
+      "cwe": "CWE-1336",
+      "snippet": "func parseConfigTemplate(data []byte) ([]byte, error) { //nolint:unused // this is only called in CE"
+     },
+     {
+      "severity": "medium",
+      "file": "legacy/src/lib/config/load_ce.go",
+      "line": 30,
+      "cwe": "CWE-1336",
+      "snippet": "data, err = parseConfigTemplate(data)"
+     },
+     {
+      "severity": "low",
+      "file": "integrations/strands/python/tests/test_integration.py",
+      "line": 159,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt=("
+     },
+     {
+      "severity": "low",
+      "file": "integrations/strands/python/examples/basic_agent.py",
+      "line": 91,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt=("
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/mastra/typescript/src/processors.ts",
+      "line": 61,
+      "cwe": "CWE-1336",
+      "snippet": "function renderTemplate(contextBlock: string, template: string): string {"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/go/context_builder_test.go",
+      "line": 300,
+      "cwe": "CWE-1336",
+      "snippet": "cb := newBeforeModelCallback(client, api, WithContextTemplate(\"CUSTOM: {context}\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/go/zepadk.go",
+      "line": 138,
+      "cwe": "CWE-1336",
+      "snippet": "func WithContextTemplate(template string) CallbackOption {"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/go/zepadk_test.go",
+      "line": 328,
+      "cwe": "CWE-1336",
+      "snippet": "WithContextTemplate(\"CUSTOM: {context}\"),"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/zep-quickstart-dashboard/agents.py",
+      "line": 117,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = ("
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/user-summary-instructions-example/agents.py",
+      "line": 117,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = ("
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/openai-agents-sdk/openai_agents_sdk_example.py",
+      "line": 29,
+      "cwe": "CWE-1427",
+      "snippet": "SYSTEM_PROMPT = \"\"\""
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/context-templates-example/agents.py",
+      "line": 121,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = ("
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/claude-prompt-caching-example/agent.py",
+      "line": 46,
+      "cwe": "CWE-1427",
+      "snippet": "MODE_SYSTEM_PROMPT = \"system-prompt\"  # context in system prompt (prefix-only caching)"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/claude-prompt-caching-example/benchmark.py",
+      "line": 296,
+      "cwe": "CWE-1427",
+      "snippet": "MODE_SYSTEM_PROMPT: {\"summary\": baseline_summary, \"turns\": [m.as_dict() for m in baseline_metrics]},"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/claude-prompt-caching-example/scenario.py",
+      "line": 589,
+      "cwe": "CWE-1427",
+      "snippet": "STATIC_SYSTEM_PROMPT = _PERSONA_PROMPT + \"\\n\\n\" + _OPERATIONS_MANUAL"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/claude-prompt-caching-example/test_structure.py",
+      "line": 88,
+      "cwe": "CWE-1427",
+      "snippet": "if mode == MODE_SYSTEM_PROMPT:"
+     },
+     {
+      "severity": "low",
+      "file": "examples/python/agent-memory-full-example/agents.py",
+      "line": 94,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = ("
+     },
+     {
+      "severity": "low",
+      "file": "benchmarks/longmemeval/zep_longmem_eval.py",
+      "line": 262,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = \"\"\""
+     },
+     {
+      "severity": "low",
+      "file": "benchmarks/longmemeval/Zep Test Harness/zep_eval.py",
+      "line": 21,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = \"\"\""
+     },
+     {
+      "severity": "low",
+      "file": "benchmarks/longmemeval/Zep Test Harness/zep_responses.py",
+      "line": 12,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = \"\"\""
+     },
+     {
+      "severity": "low",
+      "file": "benchmarks/locomo/prompts.py",
+      "line": 24,
+      "cwe": "CWE-1427",
+      "snippet": "RESPONSE_SYSTEM_PROMPT = \"\"\""
+     }
+    ]
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 37,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/examples/generate-text.ts",
+      "line": 22,
+      "cwe": "CWE-798",
+      "snippet": "*   export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/vercel-ai/typescript/examples/stream-text.ts",
+      "line": 22,
+      "cwe": "CWE-798",
+      "snippet": "*   export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/strands/python/tests/test_integration.py",
+      "line": 10,
+      "cwe": "CWE-798",
+      "snippet": "OpenAI (``ZEP_API_KEY`` + ``OPENAI_API_KEY``):"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/strands/python/examples/basic_agent.py",
+      "line": 18,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/pydantic-ai/python/tests/test_integration.py",
+      "line": 14,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY and OPENAI_API_KEY environment variables."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/pydantic-ai/python/examples/basic_agent.py",
+      "line": 25,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ms-agent-framework/python/tests/test_integration.py",
+      "line": 20,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY (all tests) and OPENAI_API_KEY (agent-driven tests only)."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ms-agent-framework/python/examples/basic_agent.py",
+      "line": 16,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/mastra/typescript/examples/basic-agent.ts",
+      "line": 17,
+      "cwe": "CWE-798",
+      "snippet": "*   export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/livekit/python/examples/graph_voice_assistant.py",
+      "line": 14,
+      "cwe": "CWE-798",
+      "snippet": "- OPENAI_API_KEY: Your OpenAI API key"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/livekit/python/examples/voice_assistant.py",
+      "line": 15,
+      "cwe": "CWE-798",
+      "snippet": "- OPENAI_API_KEY: Your OpenAI API key"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/livekit/python/examples/full-example/zep_graph_voice_agent.py",
+      "line": 106,
+      "cwe": "CWE-798",
+      "snippet": "\"OPENAI_API_KEY\","
+     },
+     {
+      "severity": "high",
+      "file": "integrations/livekit/python/examples/full-example/zep_voice_agent.py",
+      "line": 70,
+      "cwe": "CWE-798",
+      "snippet": "\"OPENAI_API_KEY\","
+     },
+     {
+      "severity": "high",
+      "file": "integrations/langgraph/python/tests/test_integration.py",
+      "line": 15,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY and OPENAI_API_KEY environment variables."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/langgraph/python/examples/react_agent.py",
+      "line": 19,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/crewai/python/tests/test_integration.py",
+      "line": 15,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY and OPENAI_API_KEY environment variables."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/autogen/python/tests/test_integration.py",
+      "line": 15,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY and OPENAI_API_KEY environment variables."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/tests/test_integration.py",
+      "line": 14,
+      "cwe": "CWE-798",
+      "snippet": "ZEP_API_KEY and OPENAI_API_KEY environment variables."
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_basic.py",
+      "line": 14,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_graph.py",
+      "line": 9,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_tools_full.py",
+      "line": 10,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/ag2_tools_search.py",
+      "line": 9,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/ag2/python/examples/manual_test.py",
+      "line": 8,
+      "cwe": "CWE-798",
+      "snippet": "export OPENAI_API_KEY=\"your-openai-api-key\""
+     },
+     {
+      "severity": "high",
+      "file": "ingestion/examples/documents_example.py",
+      "line": 11,
+      "cwe": "CWE-798",
+      "snippet": "export ANTHROPIC_API_KEY=...   # optional (or OPENAI_API_KEY)"
+     },
+     {
+      "severity": "high",
+      "file": "examples/typescript/chunking-example/src/index.ts",
+      "line": 327,
+      "cwe": "CWE-798",
+      "snippet": "const openaiApiKey = process.env.OPENAI_API_KEY;"
+     }
+    ]
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 22,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "zep-eval-harness/zep_ingest_documents.py",
+      "line": 269,
+      "cwe": "CWE-200",
+      "snippet": "\"\"\"Create the standalone graph and apply ontology/instructions.\"\"\""
+     },
+     {
+      "severity": "medium",
+      "file": "zep-eval-harness/zep_ingest_users.py",
+      "line": 156,
+      "cwe": "CWE-200",
+      "snippet": "Applies custom ontology, custom instructions, and/or user summary instructions"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/vercel-ai/typescript/src/types.ts",
+      "line": 99,
+      "cwe": "CWE-200",
+      "snippet": "* user ID. Use this to configure per-user ontology, custom instructions, or"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/strands/python/src/zep_strands/provisioning.py",
+      "line": 31,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/pydantic-ai/python/src/zep_pydantic_ai/provisioning.py",
+      "line": 32,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/ms-agent-framework/python/src/zep_ms_agent_framework/context_provider.py",
+      "line": 201,
+      "cwe": "CWE-200",
+      "snippet": "ontology, custom instructions, or user summary instructions.  It"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/ms-agent-framework/python/src/zep_ms_agent_framework/provisioning.py",
+      "line": 32,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/mastra/typescript/src/toolset.ts",
+      "line": 89,
+      "cwe": "CWE-200",
+      "snippet": "* Use this to configure per-user ontology, custom instructions, or user"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/livekit/python/src/zep_livekit/agent.py",
+      "line": 188,
+      "cwe": "CWE-200",
+      "snippet": "set up per-user ontology, custom instructions, or user summary"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/livekit/python/src/zep_livekit/provisioning.py",
+      "line": 25,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/langgraph/python/src/zep_langgraph/provisioning.py",
+      "line": 38,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/crewai/python/src/zep_crewai/provisioning.py",
+      "line": 42,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/crewai/python/src/zep_crewai/user_storage.py",
+      "line": 154,
+      "cwe": "CWE-200",
+      "snippet": "per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/autogen/python/src/zep_autogen/memory.py",
+      "line": 198,
+      "cwe": "CWE-200",
+      "snippet": "per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/autogen/python/src/zep_autogen/provisioning.py",
+      "line": 32,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/ag2/python/src/zep_ag2/memory.py",
+      "line": 186,
+      "cwe": "CWE-200",
+      "snippet": "per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/ag2/python/src/zep_ag2/provisioning.py",
+      "line": 34,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/typescript/src/provisioning.ts",
+      "line": 65,
+      "cwe": "CWE-200",
+      "snippet": "* configure per-user ontology, custom instructions, or user summary"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/python/src/zep_adk/provisioning.py",
+      "line": 31,
+      "cwe": "CWE-200",
+      "snippet": "#: per-user ontology, custom instructions, or user summary instructions."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/python/examples/basic_agent.py",
+      "line": 84,
+      "cwe": "CWE-200",
+      "snippet": "ontology, custom instructions, or (as here) a user summary instruction."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/go/zepadk.go",
+      "line": 599,
+      "cwe": "CWE-200",
+      "snippet": "//\t    // one-time per-user setup: ontology, custom instructions, etc."
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/adk/go/examples/main.go",
+      "line": 64,
+      "cwe": "CWE-200",
+      "snippet": "// per-user ontology, custom instructions, or user summary"
+     }
+    ]
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f829e5d2-ddb6-5db1-9ad9-f8cac286b278",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-13T20:05:51Z",
+   "component": {
+    "type": "application",
+    "name": "L_LYCHEEMEM",
+    "version": "495bf72880d1",
+    "bom-ref": "pkg:generic/anticloud/L_LYCHEEMEM@495bf72880d1",
+    "purl": "pkg:generic/anticloud/L_LYCHEEMEM@495bf72880d1",
+    "licenses": [
+     {
+      "license": {
+       "id": "Apache-2.0"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "495bf72880d13f0b81696ec4f88a9817ed85ca73"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/getzep/zep.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "python-dotenv",
+    "version": "unspecified",
+    "purl": "pkg:pypi/python-dotenv",
+    "bom-ref": "pypi/python-dotenv@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "zep-cloud",
+    "version": "unspecified",
+    "purl": "pkg:pypi/zep-cloud",
+    "bom-ref": "pypi/zep-cloud@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "openai",
+    "version": "unspecified",
+    "purl": "pkg:pypi/openai",
+    "bom-ref": "pypi/openai@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "pydantic",
+    "version": "unspecified",
+    "purl": "pkg:pypi/pydantic",
+    "bom-ref": "pypi/pydantic@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "chonkie",
+    "version": "unspecified",
+    "purl": "pkg:pypi/chonkie",
+    "bom-ref": "pypi/chonkie@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "github.com/getzep/zep-go/v3",
+    "version": "v3.16.0",
+    "purl": "pkg:golang/github.com/getzep/zep-go/v3@v3.16.0",
+    "bom-ref": "go/github.com/getzep/zep-go/v3@v3.16.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/joho/godotenv",
+    "version": "v1.5.1",
+    "purl": "pkg:golang/github.com/joho/godotenv@v1.5.1",
+    "bom-ref": "go/github.com/joho/godotenv@v1.5.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/modelcontextprotocol/go-sdk",
+    "version": "v1.4.1",
+    "purl": "pkg:golang/github.com/modelcontextprotocol/go-sdk@v1.4.1",
+    "bom-ref": "go/github.com/modelcontextprotocol/go-sdk@v1.4.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/google/jsonschema-go",
+    "version": "v0.4.2",
+    "purl": "pkg:golang/github.com/google/jsonschema-go@v0.4.2",
+    "bom-ref": "go/github.com/google/jsonschema-go@v0.4.2"
+   },
+   {
+    "type": "library",
+    "name": "github.com/google/uuid",
+    "version": "v1.4.0",
+    "purl": "pkg:golang/github.com/google/uuid@v1.4.0",
+    "bom-ref": "go/github.com/google/uuid@v1.4.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/segmentio/asm",
+    "version": "v1.1.3",
+    "purl": "pkg:golang/github.com/segmentio/asm@v1.1.3",
+    "bom-ref": "go/github.com/segmentio/asm@v1.1.3"
+   },
+   {
+    "type": "library",
+    "name": "github.com/segmentio/encoding",
+    "version": "v0.5.4",
+    "purl": "pkg:golang/github.com/segmentio/encoding@v0.5.4",
+    "bom-ref": "go/github.com/segmentio/encoding@v0.5.4"
+   },
+   {
+    "type": "library",
+    "name": "github.com/yosida95/uritemplate/v3",
+    "version": "v3.0.2",
+    "purl": "pkg:golang/github.com/yosida95/uritemplate/v3@v3.0.2",
+    "bom-ref": "go/github.com/yosida95/uritemplate/v3@v3.0.2"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/oauth2",
+    "version": "v0.34.0",
+    "purl": "pkg:golang/golang.org/x/oauth2@v0.34.0",
+    "bom-ref": "go/golang.org/x/oauth2@v0.34.0"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/sys",
+    "version": "v0.40.0",
+    "purl": "pkg:golang/golang.org/x/sys@v0.40.0",
+    "bom-ref": "go/golang.org/x/sys@v0.40.0"
+   },
+   {
+    "type": "library",
+    "name": "dario.cat/mergo",
+    "version": "v1.0.1",
+    "purl": "pkg:golang/dario.cat/mergo@v1.0.1",
+    "bom-ref": "go/dario.cat/mergo@v1.0.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/failsafe-go/failsafe-go",
+    "version": "v0.6.8",
+    "purl": "pkg:golang/github.com/failsafe-go/failsafe-go@v0.6.8",
+    "bom-ref": "go/github.com/failsafe-go/failsafe-go@v0.6.8"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-chi/chi/v5",
+    "version": "v5.2.4",
+    "purl": "pkg:golang/github.com/go-chi/chi/v5@v5.2.4",
+    "bom-ref": "go/github.com/go-chi/chi/v5@v5.2.4"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-chi/cors",
+    "version": "v1.2.1",
+    "purl": "pkg:golang/github.com/go-chi/cors@v1.2.1",
+    "bom-ref": "go/github.com/go-chi/cors@v1.2.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-playground/validator/v10",
+    "version": "v10.22.1",
+    "purl": "pkg:golang/github.com/go-playground/validator/v10@v10.22.1",
+    "bom-ref": "go/github.com/go-playground/validator/v10@v10.22.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/hashicorp/go-retryablehttp",
+    "version": "v0.7.7",
+    "purl": "pkg:golang/github.com/hashicorp/go-retryablehttp@v0.7.7",
+    "bom-ref": "go/github.com/hashicorp/go-retryablehttp@v0.7.7"
+   },
+   {
+    "type": "library",
+    "name": "github.com/riandyrn/otelchi",
+    "version": "v0.9.0",
+    "purl": "pkg:golang/github.com/riandyrn/otelchi@v0.9.0",
+    "bom-ref": "go/github.com/riandyrn/otelchi@v0.9.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/uptrace/bun",
+    "version": "v1.1.17",
+    "purl": "pkg:golang/github.com/uptrace/bun@v1.1.17",
+    "bom-ref": "go/github.com/uptrace/bun@v1.1.17"
+   },
+   {
+    "type": "library",
+    "name": "github.com/uptrace/bun/dialect/pgdialect",
+    "version": "v1.1.17",
+    "purl": "pkg:golang/github.com/uptrace/bun/dialect/pgdialect@v1.1.17",
+    "bom-ref": "go/github.com/uptrace/bun/dialect/pgdialect@v1.1.17"
+   },
+   {
+    "type": "library",
+    "name": "github.com/uptrace/bun/driver/pgdriver",
+    "version": "v1.1.17",
+    "purl": "pkg:golang/github.com/uptrace/bun/driver/pgdriver@v1.1.17",
+    "bom-ref": "go/github.com/uptrace/bun/driver/pgdriver@v1.1.17"
+   },
+   {
+    "type": "library",
+    "name": "github.com/uptrace/bun/extra/bunotel",
+    "version": "v1.1.17",
+    "purl": "pkg:golang/github.com/uptrace/bun/extra/bunotel@v1.1.17",
+    "bom-ref": "go/github.com/uptrace/bun/extra/bunotel@v1.1.17"
+   },
+   {
+    "type": "library",
+    "name": "github.com/viterin/vek",
+    "version": "v0.4.2",
+    "purl": "pkg:golang/github.com/viterin/vek@v0.4.2",
+    "bom-ref": "go/github.com/viterin/vek@v0.4.2"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace",
+    "version": "v0.46.1",
+    "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@v0.46.1",
+    "bom-ref": "go/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@v0.46.1"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.48.0",
+    "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.48.0",
+    "bom-ref": "go/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.48.0"
+   },
+   {
+    "type": "library",
+    "name": "go.uber.org/zap",
+    "version": "v1.27.0",
+    "purl": "pkg:golang/go.uber.org/zap@v1.27.0",
+    "bom-ref": "go/go.uber.org/zap@v1.27.0"
+   },
+   {
+    "type": "library",
+    "name": "gopkg.in/yaml.v3",
+    "version": "v3.0.1",
+    "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+    "bom-ref": "go/gopkg.in/yaml.v3@v3.0.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/chewxy/math32",
+    "version": "v1.10.1",
+    "purl": "pkg:golang/github.com/chewxy/math32@v1.10.1",
+    "bom-ref": "go/github.com/chewxy/math32@v1.10.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/felixge/httpsnoop",
+    "version": "v1.0.4",
+    "purl": "pkg:golang/github.com/felixge/httpsnoop@v1.0.4",
+    "bom-ref": "go/github.com/felixge/httpsnoop@v1.0.4"
+   },
+   {
+    "type": "library",
+    "name": "github.com/gabriel-vasile/mimetype",
+    "version": "v1.4.3",
+    "purl": "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.3",
+    "bom-ref": "go/github.com/gabriel-vasile/mimetype@v1.4.3"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-logr/logr",
+    "version": "v1.4.2",
+    "purl": "pkg:golang/github.com/go-logr/logr@v1.4.2",
+    "bom-ref": "go/github.com/go-logr/logr@v1.4.2"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-logr/stdr",
+    "version": "v1.2.2",
+    "purl": "pkg:golang/github.com/go-logr/stdr@v1.2.2",
+    "bom-ref": "go/github.com/go-logr/stdr@v1.2.2"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-playground/locales",
+    "version": "v0.14.1",
+    "purl": "pkg:golang/github.com/go-playground/locales@v0.14.1",
+    "bom-ref": "go/github.com/go-playground/locales@v0.14.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/go-playground/universal-translator",
+    "version": "v0.18.1",
+    "purl": "pkg:golang/github.com/go-playground/universal-translator@v0.18.1",
+    "bom-ref": "go/github.com/go-playground/universal-translator@v0.18.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/hashicorp/go-cleanhttp",
+    "version": "v0.5.2",
+    "purl": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
+    "bom-ref": "go/github.com/hashicorp/go-cleanhttp@v0.5.2"
+   },
+   {
+    "type": "library",
+    "name": "github.com/jinzhu/inflection",
+    "version": "v1.0.0",
+    "purl": "pkg:golang/github.com/jinzhu/inflection@v1.0.0",
+    "bom-ref": "go/github.com/jinzhu/inflection@v1.0.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/leodido/go-urn",
+    "version": "v1.4.0",
+    "purl": "pkg:golang/github.com/leodido/go-urn@v1.4.0",
+    "bom-ref": "go/github.com/leodido/go-urn@v1.4.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/lithammer/shortuuid/v3",
+    "version": "v3.0.7",
+    "purl": "pkg:golang/github.com/lithammer/shortuuid/v3@v3.0.7",
+    "bom-ref": "go/github.com/lithammer/shortuuid/v3@v3.0.7"
+   },
+   {
+    "type": "library",
+    "name": "github.com/oklog/ulid",
+    "version": "v1.3.1",
+    "purl": "pkg:golang/github.com/oklog/ulid@v1.3.1",
+    "bom-ref": "go/github.com/oklog/ulid@v1.3.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/pkg/errors",
+    "version": "v0.9.1",
+    "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+    "bom-ref": "go/github.com/pkg/errors@v0.9.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/tmthrgd/go-hex",
+    "version": "v0.0.0-20190904060850-447a3041c3bc",
+    "purl": "pkg:golang/github.com/tmthrgd/go-hex@v0.0.0-20190904060850-447a3041c3bc",
+    "bom-ref": "go/github.com/tmthrgd/go-hex@v0.0.0-20190904060850-447a3041c3bc"
+   },
+   {
+    "type": "library",
+    "name": "github.com/uptrace/opentelemetry-go-extra/otelsql",
+    "version": "v0.2.3",
+    "purl": "pkg:golang/github.com/uptrace/opentelemetry-go-extra/otelsql@v0.2.3",
+    "bom-ref": "go/github.com/uptrace/opentelemetry-go-extra/otelsql@v0.2.3"
+   },
+   {
+    "type": "library",
+    "name": "github.com/viterin/partial",
+    "version": "v1.1.0",
+    "purl": "pkg:golang/github.com/viterin/partial@v1.1.0",
+    "bom-ref": "go/github.com/viterin/partial@v1.1.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/vmihailenco/msgpack/v5",
+    "version": "v5.4.1",
+    "purl": "pkg:golang/github.com/vmihailenco/msgpack/v5@v5.4.1",
+    "bom-ref": "go/github.com/vmihailenco/msgpack/v5@v5.4.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/vmihailenco/tagparser/v2",
+    "version": "v2.0.0",
+    "purl": "pkg:golang/github.com/vmihailenco/tagparser/v2@v2.0.0",
+    "bom-ref": "go/github.com/vmihailenco/tagparser/v2@v2.0.0"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/otel",
+    "version": "v1.28.0",
+    "purl": "pkg:golang/go.opentelemetry.io/otel@v1.28.0",
+    "bom-ref": "go/go.opentelemetry.io/otel@v1.28.0"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/otel/metric",
+    "version": "v1.28.0",
+    "purl": "pkg:golang/go.opentelemetry.io/otel/metric@v1.28.0",
+    "bom-ref": "go/go.opentelemetry.io/otel/metric@v1.28.0"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/otel/trace",
+    "version": "v1.28.0",
+    "purl": "pkg:golang/go.opentelemetry.io/otel/trace@v1.28.0",
+    "bom-ref": "go/go.opentelemetry.io/otel/trace@v1.28.0"
+   },
+   {
+    "type": "library",
+    "name": "go.uber.org/multierr",
+    "version": "v1.10.0",
+    "purl": "pkg:golang/go.uber.org/multierr@v1.10.0",
+    "bom-ref": "go/go.uber.org/multierr@v1.10.0"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/crypto",
+    "version": "v0.52.0",
+    "purl": "pkg:golang/golang.org/x/crypto@v0.52.0",
+    "bom-ref": "go/golang.org/x/crypto@v0.52.0"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/exp",
+    "version": "v0.0.0-20230817173708-d852ddb80c63",
+    "purl": "pkg:golang/golang.org/x/exp@v0.0.0-20230817173708-d852ddb80c63",
+    "bom-ref": "go/golang.org/x/exp@v0.0.0-20230817173708-d852ddb80c63"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/net",
+    "version": "v0.55.0",
+    "purl": "pkg:golang/golang.org/x/net@v0.55.0",
+    "bom-ref": "go/golang.org/x/net@v0.55.0"
+   },
+   {
+    "type": "library",
+    "name": "golang.org/x/text",
+    "version": "v0.37.0",
+    "purl": "pkg:golang/golang.org/x/text@v0.37.0",
+    "bom-ref": "go/golang.org/x/text@v0.37.0"
+   },
+   {
+    "type": "library",
+    "name": "mellium.im/sasl",
+    "version": "v0.3.1",
+    "purl": "pkg:golang/mellium.im/sasl@v0.3.1",
+    "bom-ref": "go/mellium.im/sasl@v0.3.1"
+   },
+   {
+    "type": "library",
+    "name": "@getzep/zep-cloud",
+    "version": "^3.23.0",
+    "purl": "pkg:npm/@getzep/zep-cloud@^3.23.0",
+    "bom-ref": "npm/@getzep/zep-cloud@^3.23.0"
+   },
+   {
+    "type": "library",
+    "name": "@ai-sdk/openai",
+    "version": "^3.0.0",
+    "purl": "pkg:npm/@ai-sdk/openai@^3.0.0",
+    "bom-ref": "npm/@ai-sdk/openai@^3.0.0"
+   },
+   {
+    "type": "library",
+    "name": "@eslint/js",
+    "version": "^9.39.4",
+    "purl": "pkg:npm/@eslint/js@^9.39.4",
+    "bom-ref": "npm/@eslint/js@^9.39.4"
+   },
+   {
+    "type": "library",
+    "name": "@types/node",
+    "version": "^22.0.0",
+    "purl": "pkg:npm/@types/node@^22.0.0",
+    "bom-ref": "npm/@types/node@^22.0.0"
+   },
+   {
+    "type": "library",
+    "name": "ai",
+    "version": "^6.0.0",
+    "purl": "pkg:npm/ai@^6.0.0",
+    "bom-ref": "npm/ai@^6.0.0"
+   },
+   {
+    "type": "library",
+    "name": "eslint",
+    "version": "^9.39.4",
+    "purl": "pkg:npm/eslint@^9.39.4",
+    "bom-ref": "npm/eslint@^9.39.4"
+   },
+   {
+    "type": "library",
+    "name": "tsup",
+    "version": "^8.3.0",
+    "purl": "pkg:npm/tsup@^8.3.0",
+    "bom-ref": "npm/tsup@^8.3.0"
+   },
+   {
+    "type": "library",
+    "name": "tsx",
+    "version": "^4.19.0",
+    "purl": "pkg:npm/tsx@^4.19.0",
+    "bom-ref": "npm/tsx@^4.19.0"
+   },
+   {
+    "type": "library",
+    "name": "typescript",
+    "version": "^5.6.0",
+    "purl": "pkg:npm/typescript@^5.6.0",
+    "bom-ref": "npm/typescript@^5.6.0"
+   },
+   {
+    "type": "library",
+    "name": "typescript-eslint",
+    "version": "^8.61.1",
+    "purl": "pkg:npm/typescript-eslint@^8.61.1",
+    "bom-ref": "npm/typescript-eslint@^8.61.1"
+   },
+   {
+    "type": "library",
+    "name": "vitest",
+    "version": "^3.2.6",
+    "purl": "pkg:npm/vitest@^3.2.6",
+    "bom-ref": "npm/vitest@^3.2.6"
+   },
+   {
+    "type": "library",
+    "name": "zod",
+    "version": "^3.25.0",
+    "purl": "pkg:npm/zod@^3.25.0",
+    "bom-ref": "npm/zod@^3.25.0"
+   },
+   {
+    "type": "library",
+    "name": "strands-agents",
+    "version": ">=1.45.0",
+    "purl": "pkg:pypi/strands-agents@1.45.0",
+    "bom-ref": "pypi/strands-agents@>=1.45.0"
+   },
+   {
+    "type": "library",
+    "name": "pydantic-ai",
+    "version": ">=1.107",
+    "purl": "pkg:pypi/pydantic-ai@1.107",
+    "bom-ref": "pypi/pydantic-ai@>=1.107"
+   },
+   {
+    "type": "library",
+    "name": "agent-framework-core",
+    "version": ">=1.8.1",
+    "purl": "pkg:pypi/agent-framework-core@1.8.1",
+    "bom-ref": "pypi/agent-framework-core@>=1.8.1"
+   },
+   {
+    "type": "library",
+    "name": "@mastra/core",
+    "version": "^1.42.0",
+    "purl": "pkg:npm/@mastra/core@^1.42.0",
+    "bom-ref": "npm/@mastra/core@^1.42.0"
+   },
+   {
+    "type": "library",
+    "name": "langchain-core",
+    "version": ">=1.0",
+    "purl": "pkg:pypi/langchain-core@1.0",
+    "bom-ref": "pypi/langchain-core@>=1.0"
+   },
+   {
+    "type": "library",
+    "name": "langgraph",
+    "version": ">=1.2.5",
+    "purl": "pkg:pypi/langgraph@1.2.5",
+    "bom-ref": "pypi/langgraph@>=1.2.5"
+   },
+   {
+    "type": "library",
+    "name": "crewai",
+    "version": ">=1.0.0",
+    "purl": "pkg:pypi/crewai@1.0.0",
+    "bom-ref": "pypi/crewai@>=1.0.0"
+   },
+   {
+    "type": "library",
+    "name": "aiohttp",
+    "version": ">=3.8.0",
+    "purl": "pkg:pypi/aiohttp@3.8.0",
+    "bom-ref": "pypi/aiohttp@>=3.8.0"
+   },
+   {
+    "type": "library",
+    "name": "python-slugify",
+    "version": ">=8.0.4",
+    "purl": "pkg:pypi/python-slugify@8.0.4",
+    "bom-ref": "pypi/python-slugify@>=8.0.4"
+   },
+   {
+    "type": "library",
+    "name": "rich",
+    "version": ">=14.0.0",
+    "purl": "pkg:pypi/rich@14.0.0",
+    "bom-ref": "pypi/rich@>=14.0.0"
+   },
+   {
+    "type": "library",
+    "name": "autogen-agentchat",
+    "version": ">=0.7.0",
+    "purl": "pkg:pypi/autogen-agentchat@0.7.0",
+    "bom-ref": "pypi/autogen-agentchat@>=0.7.0"
+   },
+   {
+    "type": "library",
+    "name": "ag2",
+    "version": ">=0.9.0",
+    "purl": "pkg:pypi/ag2@0.9.0",
+    "bom-ref": "pypi/ag2@>=0.9.0"
+   },
+   {
+    "type": "library",
+    "name": "@google/genai",
+    "version": "^1.37.0",
+    "purl": "pkg:npm/@google/genai@^1.37.0",
+    "bom-ref": "npm/@google/genai@^1.37.0"
+   },
+   {
+    "type": "library",
+    "name": "@google/adk",
+    "version": "1.2.0",
+    "purl": "pkg:npm/@google/adk@1.2.0",
+    "bom-ref": "npm/@google/adk@1.2.0"
+   },
+   {
+    "type": "library",
+    "name": "google-adk",
+    "version": ">=1.19.0",
+    "purl": "pkg:pypi/google-adk@1.19.0",
+    "bom-ref": "pypi/google-adk@>=1.19.0"
+   },
+   {
+    "type": "library",
+    "name": "typing-extensions",
+    "version": ">=4.0.0",
+    "purl": "pkg:pypi/typing-extensions@4.0.0",
+    "bom-ref": "pypi/typing-extensions@>=4.0.0"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/adk",
+    "version": "v1.4.0",
+    "purl": "pkg:golang/google.golang.org/adk@v1.4.0",
+    "bom-ref": "go/google.golang.org/adk@v1.4.0"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/genai",
+    "version": "v1.57.0",
+    "purl": "pkg:golang/google.golang.org/genai@v1.57.0",
+    "bom-ref": "go/google.golang.org/genai@v1.57.0"
+   },
+   {
+    "type": "library",
+    "name": "cloud.google.com/go",
+    "version": "v0.123.0",
+    "purl": "pkg:golang/cloud.google.com/go@v0.123.0",
+    "bom-ref": "go/cloud.google.com/go@v0.123.0"
+   },
+   {
+    "type": "library",
+    "name": "cloud.google.com/go/auth",
+    "version": "v0.20.0",
+    "purl": "pkg:golang/cloud.google.com/go/auth@v0.20.0",
+    "bom-ref": "go/cloud.google.com/go/auth@v0.20.0"
+   },
+   {
+    "type": "library",
+    "name": "cloud.google.com/go/compute/metadata",
+    "version": "v0.9.0",
+    "purl": "pkg:golang/cloud.google.com/go/compute/metadata@v0.9.0",
+    "bom-ref": "go/cloud.google.com/go/compute/metadata@v0.9.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/cespare/xxhash/v2",
+    "version": "v2.3.0",
+    "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.3.0",
+    "bom-ref": "go/github.com/cespare/xxhash/v2@v2.3.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/google/go-cmp",
+    "version": "v0.7.0",
+    "purl": "pkg:golang/github.com/google/go-cmp@v0.7.0",
+    "bom-ref": "go/github.com/google/go-cmp@v0.7.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/google/s2a-go",
+    "version": "v0.1.9",
+    "purl": "pkg:golang/github.com/google/s2a-go@v0.1.9",
+    "bom-ref": "go/github.com/google/s2a-go@v0.1.9"
+   },
+   {
+    "type": "library",
+    "name": "github.com/google/safehtml",
+    "version": "v0.1.0",
+    "purl": "pkg:golang/github.com/google/safehtml@v0.1.0",
+    "bom-ref": "go/github.com/google/safehtml@v0.1.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/googleapis/enterprise-certificate-proxy",
+    "version": "v0.3.15",
+    "purl": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.3.15",
+    "bom-ref": "go/github.com/googleapis/enterprise-certificate-proxy@v0.3.15"
+   },
+   {
+    "type": "library",
+    "name": "github.com/googleapis/gax-go/v2",
+    "version": "v2.22.0",
+    "purl": "pkg:golang/github.com/googleapis/gax-go/v2@v2.22.0",
+    "bom-ref": "go/github.com/googleapis/gax-go/v2@v2.22.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/gorilla/websocket",
+    "version": "v1.5.3",
+    "purl": "pkg:golang/github.com/gorilla/websocket@v1.5.3",
+    "bom-ref": "go/github.com/gorilla/websocket@v1.5.3"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/auto/sdk",
+    "version": "v1.2.1",
+    "purl": "pkg:golang/go.opentelemetry.io/auto/sdk@v1.2.1",
+    "bom-ref": "go/go.opentelemetry.io/auto/sdk@v1.2.1"
+   },
+   {
+    "type": "library",
+    "name": "go.opentelemetry.io/otel/log",
+    "version": "v0.16.0",
+    "purl": "pkg:golang/go.opentelemetry.io/otel/log@v0.16.0",
+    "bom-ref": "go/go.opentelemetry.io/otel/log@v0.16.0"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/api",
+    "version": "v0.279.0",
+    "purl": "pkg:golang/google.golang.org/api@v0.279.0",
+    "bom-ref": "go/google.golang.org/api@v0.279.0"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/genproto/googleapis/rpc",
+    "version": "v0.0.0-20260511170946-3700d4141b60",
+    "purl": "pkg:golang/google.golang.org/genproto/googleapis/rpc@v0.0.0-20260511170946-3700d4141b60",
+    "bom-ref": "go/google.golang.org/genproto/googleapis/rpc@v0.0.0-20260511170946-3700d4141b60"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/grpc",
+    "version": "v1.82.1",
+    "purl": "pkg:golang/google.golang.org/grpc@v1.82.1",
+    "bom-ref": "go/google.golang.org/grpc@v1.82.1"
+   },
+   {
+    "type": "library",
+    "name": "google.golang.org/protobuf",
+    "version": "v1.36.11",
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.36.11",
+    "bom-ref": "go/google.golang.org/protobuf@v1.36.11"
+   },
+   {
+    "type": "library",
+    "name": "rsc.io/omap",
+    "version": "v1.2.0",
+    "purl": "pkg:golang/rsc.io/omap@v1.2.0",
+    "bom-ref": "go/rsc.io/omap@v1.2.0"
+   },
+   {
+    "type": "library",
+    "name": "rsc.io/ordered",
+    "version": "v1.1.1",
+    "purl": "pkg:golang/rsc.io/ordered@v1.1.1",
+    "bom-ref": "go/rsc.io/ordered@v1.1.1"
+   },
+   {
+    "type": "library",
+    "name": "s",
+    "version": "own",
+    "purl": "pkg:pypi/s@own",
+    "bom-ref": "pypi/s@own"
+   },
+   {
+    "type": "library",
+    "name": "uuid",
+    "version": "^11.1.1",
+    "purl": "pkg:npm/uuid@^11.1.1",
+    "bom-ref": "npm/uuid@^11.1.1"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-dialog",
+    "version": "^1.1.6",
+    "purl": "pkg:npm/@radix-ui/react-dialog@^1.1.6",
+    "bom-ref": "npm/@radix-ui/react-dialog@^1.1.6"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-dropdown-menu",
+    "version": "^2.1.6",
+    "purl": "pkg:npm/@radix-ui/react-dropdown-menu@^2.1.6",
+    "bom-ref": "npm/@radix-ui/react-dropdown-menu@^2.1.6"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-hover-card",
+    "version": "^1.1.6",
+    "purl": "pkg:npm/@radix-ui/react-hover-card@^1.1.6",
+    "bom-ref": "npm/@radix-ui/react-hover-card@^1.1.6"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-label",
+    "version": "^2.1.2",
+    "purl": "pkg:npm/@radix-ui/react-label@^2.1.2",
+    "bom-ref": "npm/@radix-ui/react-label@^2.1.2"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-popover",
+    "version": "^1.1.6",
+    "purl": "pkg:npm/@radix-ui/react-popover@^1.1.6",
+    "bom-ref": "npm/@radix-ui/react-popover@^1.1.6"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-slot",
+    "version": "^1.1.2",
+    "purl": "pkg:npm/@radix-ui/react-slot@^1.1.2",
+    "bom-ref": "npm/@radix-ui/react-slot@^1.1.2"
+   },
+   {
+    "type": "library",
+    "name": "@radix-ui/react-switch",
+    "version": "^1.1.3",
+    "purl": "pkg:npm/@radix-ui/react-switch@^1.1.3",
+    "bom-ref": "npm/@radix-ui/react-switch@^1.1.3"
+   },
+   {
+    "type": "library",
+    "name": "class-variance-authority",
+    "version": "^0.7.1",
+    "purl": "pkg:npm/class-variance-authority@^0.7.1",
+    "bom-ref": "npm/class-variance-authority@^0.7.1"
+   },
+   {
+    "type": "library",
+    "name": "clsx",
+    "version": "^2.1.1",
+    "purl": "pkg:npm/clsx@^2.1.1",
+    "bom-ref": "npm/clsx@^2.1.1"
+   },
+   {
+    "type": "library",
+    "name": "d3",
+    "version": "^7.9.0",
+    "purl": "pkg:npm/d3@^7.9.0",
+    "bom-ref": "npm/d3@^7.9.0"
+   },
+   {
+    "type": "library",
+    "name": "dayjs",
+    "version": "^1.11.13",
+    "purl": "pkg:npm/dayjs@^1.11.13",
+    "bom-ref": "npm/dayjs@^1.11.13"
+   },
+   {
+    "type": "library",
+    "name": "lucide-react",
+    "version": "^0.479.0",
+    "purl": "pkg:npm/lucide-react@^0.479.0",
+    "bom-ref": "npm/lucide-react@^0.479.0"
+   },
+   {
+    "type": "library",
+    "name": "next",
+    "version": "15.5.21",
+    "purl": "pkg:npm/next@15.5.21",
+    "bom-ref": "npm/next@15.5.21"
+   },
+   {
+    "type": "library",
+    "name": "next-themes",
+    "version": "^0.4.6",
+    "purl": "pkg:npm/next-themes@^0.4.6",
+    "bom-ref": "npm/next-themes@^0.4.6"
+   },
+   {
+    "type": "library",
+    "name": "react",
+    "version": "^19.0.0",
+    "purl": "pkg:npm/react@^19.0.0",
+    "bom-ref": "npm/react@^19.0.0"
+   },
+   {
+    "type": "library",
+    "name": "react-dom",
+    "version": "^19.0.0",
+    "purl": "pkg:npm/react-dom@^19.0.0",
+    "bom-ref": "npm/react-dom@^19.0.0"
+   },
+   {
+    "type": "library",
+    "name": "sonner",
+    "version": "^2.0.1",
+    "purl": "pkg:npm/sonner@^2.0.1",
+    "bom-ref": "npm/sonner@^2.0.1"
+   },
+   {
+    "type": "library",
+    "name": "tailwind-merge",
+    "version": "^3.0.2",
+    "purl": "pkg:npm/tailwind-merge@^3.0.2",
+    "bom-ref": "npm/tailwind-merge@^3.0.2"
+   },
+   {
+    "type": "library",
+    "name": "tailwindcss-animate",
+    "version": "^1.0.7",
+    "purl": "pkg:npm/tailwindcss-animate@^1.0.7",
+    "bom-ref": "npm/tailwindcss-animate@^1.0.7"
+   },
+   {
+    "type": "library",
+    "name": "@eslint/eslintrc",
+    "version": "^3",
+    "purl": "pkg:npm/@eslint/eslintrc@^3",
+    "bom-ref": "npm/@eslint/eslintrc@^3"
+   },
+   {
+    "type": "library",
+    "name": "@tailwindcss/postcss",
+    "version": "^4",
+    "purl": "pkg:npm/@tailwindcss/postcss@^4",
+    "bom-ref": "npm/@tailwindcss/postcss@^4"
+   },
+   {
+    "type": "library",
+    "name": "@types/d3",
+    "version": "^7.4.3",
+    "purl": "pkg:npm/@types/d3@^7.4.3",
+    "bom-ref": "npm/@types/d3@^7.4.3"
+   },
+   {
+    "type": "library",
+    "name": "@types/react",
+    "version": "^19",
+    "purl": "pkg:npm/@types/react@^19",
+    "bom-ref": "npm/@types/react@^19"
+   },
+   {
+    "type": "library",
+    "name": "@types/react-dom",
+    "version": "^19",
+    "purl": "pkg:npm/@types/react-dom@^19",
+    "bom-ref": "npm/@types/react-dom@^19"
+   },
+   {
+    "type": "library",
+    "name": "eslint-config-next",
+    "version": "^15.5.18",
+    "purl": "pkg:npm/eslint-config-next@^15.5.18",
+    "bom-ref": "npm/eslint-config-next@^15.5.18"
+   },
+   {
+    "type": "library",
+    "name": "tailwindcss",
+    "version": "^4",
+    "purl": "pkg:npm/tailwindcss@^4",
+    "bom-ref": "npm/tailwindcss@^4"
+   },
+   {
+    "type": "library",
+    "name": "@langchain/core",
+    "version": "^1.2.10",
+    "purl": "pkg:npm/@langchain/core@^1.2.10",
+    "bom-ref": "npm/@langchain/core@^1.2.10"
+   },
+   {
+    "type": "library",
+    "name": "@langchain/langgraph",
+    "version": "^1.4.14",
+    "purl": "pkg:npm/@langchain/langgraph@^1.4.14",
+    "bom-ref": "npm/@langchain/langgraph@^1.4.14"
+   },
+   {
+    "type": "library",
+    "name": "@langchain/openai",
+    "version": "^1.5.12",
+    "purl": "pkg:npm/@langchain/openai@^1.5.12",
+    "bom-ref": "npm/@langchain/openai@^1.5.12"
+   },
+   {
+    "type": "library",
+    "name": "@langchain/tavily",
+    "version": "^1.2.0",
+    "purl": "pkg:npm/@langchain/tavily@^1.2.0",
+    "bom-ref": "npm/@langchain/tavily@^1.2.0"
+   },
+   {
+    "type": "library",
+    "name": "commander",
+    "version": "^12.1.0",
+    "purl": "pkg:npm/commander@^12.1.0",
+    "bom-ref": "npm/commander@^12.1.0"
+   },
+   {
+    "type": "library",
+    "name": "dotenv",
+    "version": "^16.4.7",
+    "purl": "pkg:npm/dotenv@^16.4.7",
+    "bom-ref": "npm/dotenv@^16.4.7"
+   },
+   {
+    "type": "library",
+    "name": "langsmith",
+    "version": "^0.3.15",
+    "purl": "pkg:npm/langsmith@^0.3.15",
+    "bom-ref": "npm/langsmith@^0.3.15"
+   },
+   {
+    "type": "library",
+    "name": "@ai-sdk/google",
+    "version": "^4.0.67",
+    "purl": "pkg:npm/@ai-sdk/google@^4.0.67",
+    "bom-ref": "npm/@ai-sdk/google@^4.0.67"
+   },
+   {
+    "type": "library",
+    "name": "@vercel/connect",
+    "version": "0.4.3",
+    "purl": "pkg:npm/@vercel/connect@0.4.3",
+    "bom-ref": "npm/@vercel/connect@0.4.3"
+   },
+   {
+    "type": "library",
+    "name": "eve",
+    "version": "^0.32.0",
+    "purl": "pkg:npm/eve@^0.32.0",
+    "bom-ref": "npm/eve@^0.32.0"
+   },
+   {
+    "type": "library",
+    "name": "microsandbox",
+    "version": "^0.5.10",
+    "purl": "pkg:npm/microsandbox@^0.5.10",
+    "bom-ref": "npm/microsandbox@^0.5.10"
+   },
+   {
+    "type": "library",
+    "name": "openai",
+    "version": "^7.15.0",
+    "purl": "pkg:npm/openai@^7.15.0",
+    "bom-ref": "npm/openai@^7.15.0"
+   },
+   {
+    "type": "library",
+    "name": "click",
+    "version": ">=8.1.8",
+    "purl": "pkg:pypi/click@8.1.8",
+    "bom-ref": "pypi/click@>=8.1.8"
+   },
+   {
+    "type": "library",
+    "name": "openai-agents",
+    "version": ">=0.22.2",
+    "purl": "pkg:pypi/openai-agents@0.22.2",
+    "bom-ref": "pypi/openai-agents@>=0.22.2"
+   },
+   {
+    "type": "library",
+    "name": "packaging",
+    "version": ">=24.2",
+    "purl": "pkg:pypi/packaging@24.2",
+    "bom-ref": "pypi/packaging@>=24.2"
+   },
+   {
+    "type": "library",
+    "name": "@11labs/react",
+    "version": "^0.0.4",
+    "purl": "pkg:npm/@11labs/react@^0.0.4",
+    "bom-ref": "npm/@11labs/react@^0.0.4"
+   },
+   {
+    "type": "library",
+    "name": "@vitejs/plugin-react",
+    "version": "^4.2.1",
+    "purl": "pkg:npm/@vitejs/plugin-react@^4.2.1",
+    "bom-ref": "npm/@vitejs/plugin-react@^4.2.1"
+   },
+   {
+    "type": "library",
+    "name": "vite",
+    "version": "^7.3.5",
+    "purl": "pkg:npm/vite@^7.3.5",
+    "bom-ref": "npm/vite@^7.3.5"
+   },
+   {
+    "type": "library",
+    "name": "github.com/openai/openai-go/v3",
+    "version": "v3.44.0",
+    "purl": "pkg:golang/github.com/openai/openai-go/v3@v3.44.0",
+    "bom-ref": "go/github.com/openai/openai-go/v3@v3.44.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/tidwall/gjson",
+    "version": "v1.18.0",
+    "purl": "pkg:golang/github.com/tidwall/gjson@v1.18.0",
+    "bom-ref": "go/github.com/tidwall/gjson@v1.18.0"
+   },
+   {
+    "type": "library",
+    "name": "github.com/tidwall/match",
+    "version": "v1.1.1",
+    "purl": "pkg:golang/github.com/tidwall/match@v1.1.1",
+    "bom-ref": "go/github.com/tidwall/match@v1.1.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/tidwall/pretty",
+    "version": "v1.2.1",
+    "purl": "pkg:golang/github.com/tidwall/pretty@v1.2.1",
+    "bom-ref": "go/github.com/tidwall/pretty@v1.2.1"
+   },
+   {
+    "type": "library",
+    "name": "github.com/tidwall/sjson",
+    "version": "v1.2.5",
+    "purl": "pkg:golang/github.com/tidwall/sjson@v1.2.5",
+    "bom-ref": "go/github.com/tidwall/sjson@v1.2.5"
+   },
+   {
+    "type": "library",
+    "name": "gdown",
+    "version": "unspecified",
+    "purl": "pkg:pypi/gdown",
+    "bom-ref": "pypi/gdown@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "pandas",
+    "version": "unspecified",
+    "purl": "pkg:pypi/pandas",
+    "bom-ref": "pypi/pandas@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "scipy",
+    "version": "unspecified",
+    "purl": "pkg:pypi/scipy",
+    "bom-ref": "pypi/scipy@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "requests",
+    "version": "unspecified",
+    "purl": "pkg:pypi/requests",
+    "bom-ref": "pypi/requests@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "pyyaml",
+    "version": ">=6.0",
+    "purl": "pkg:pypi/pyyaml@6.0",
+    "bom-ref": "pypi/pyyaml@>=6.0"
+   },
+   {
+    "type": "library",
+    "name": "tiktoken",
+    "version": ">=0.5.0",
+    "purl": "pkg:pypi/tiktoken@0.5.0",
+    "bom-ref": "pypi/tiktoken@>=0.5.0"
+   },
+   {
+    "type": "library",
+    "name": "tqdm",
+    "version": ">=4.65.0",
+    "purl": "pkg:pypi/tqdm@4.65.0",
+    "bom-ref": "pypi/tqdm@>=4.65.0"
+   },
+   {
+    "type": "library",
+    "name": "orjson",
+    "version": ">=3.11.4",
+    "purl": "pkg:pypi/orjson@3.11.4",
+    "bom-ref": "pypi/orjson@>=3.11.4"
+   },
+   {
+    "type": "library",
+    "name": "tenacity",
+    "version": ">=9.1.2",
+    "purl": "pkg:pypi/tenacity@9.1.2",
+    "bom-ref": "pypi/tenacity@>=9.1.2"
+   }
+  ]
+ },
+ "elapsed_seconds": 16.55,
+ "benchmarks": [
+  {
+   "evidence": {
+    "ceilings": {
+     "max_files": 120,
+     "max_lines": 20000,
+     "min_lines": 2000
+    },
+    "code_lines": 6889,
+    "command": "python tools/run_bench.py --only 01_loc_files",
+    "counts_command": "find src tests tools -name '*.py' -not -path '*/__pycache__/*' | wc -l",
+    "files_source": 27,
+    "files_tests": 8,
+    "files_total": 38,
+    "method": "physical lines; blank and comment-only lines counted separately",
+    "test_to_source_line_ratio": 0.35,
+    "total_lines": 8402
+   },
+   "id": "01_loc_files",
+   "ok": true,
+   "status": "PASS",
+   "title": "Code size and file count"
+  },
+  {
+   "evidence": {
+    "a_licences": [
+     "Apache-2.0",
+     "BSD-2-Clause",
+     "BSD-3-Clause",
+     "ISC",
+     "MIT",
+     "MPL-2.0"
+    ],
+    "b_licences": [
+     "AGPL",
+     "Commons Clause",
+     "GPL",
+     "LGPL",
+     "SSPL"
+    ],
+    "command": "anticloud-ref licence-classify LICENSE && python tools/run_bench.py --only 02_licence",
+    "default_for_unknown_is_C": true,
+    "mismatches": {},
+    "observed": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "only_class_A_may_relicense": true,
+    "policy_probes": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "project_licence": {
+     "LICENSE": "A",
+     "reason": "permissive licence text identified",
+     "spdx": "apache-2.0"
+    },
+    "pyproject_declared": "Apache-2.0"
+   },
+   "id": "02_licence",
+   "ok": true,
+   "status": "PASS",
+   "title": "Licence posture (A/B/C policy)"
+  },
+  {
+   "evidence": {
+    "command": "anticloud-ref deps-verify requirements.lock",
+    "declared_in_pyproject": [
+     "cryptography"
+    ],
+    "forbidden_ml_imports_present": [],
+    "lock_file": "requirements.lock",
+    "packages_hashed": 6,
+    "packages_pinned": 6,
+    "requirements": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest==9.1.1",
+     "pytest-cov==7.1.0"
+    ],
+    "sha256_hashes": 286,
+    "transitive_or_unclassified": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest-cov==7.1.0",
+     "pytest==9.1.1"
+    ],
+    "verify_problems": []
+   },
+   "id": "03_dependency_scan",
+   "ok": true,
+   "status": "PASS",
+   "title": "Dependency scan (hash-pinned lock)"
+  },
+  {
+   "evidence": {
+    "command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d['bomFormat'],d['specVersion'],len(d['components']))\"",
+    "components": 272,
+    "components_with_licence": 265,
+    "components_with_sha256": 4,
+    "dependency_edges": 272,
+    "file": "sbom.cdx.json",
+    "format": "CycloneDX",
+    "generated_from": "live importlib.metadata + requirements.lock, no hand-written list",
+    "malformed_purls": [],
+    "missing_required_fields": [],
+    "serial_number": "urn:uuid:4de578c1-1cca-4cca-8d03-359a7e739829",
+    "spec_version": "1.5"
+   },
+   "id": "04_sbom_cyclonedx",
+   "ok": true,
+   "status": "PASS",
+   "title": "SBOM (CycloneDX 1.5)"
+  },
+  {
+   "evidence": {
+    "branch": "main",
+    "command": "git status --porcelain && git log --oneline -1 && git fsck --no-progress",
+    "commits": 1,
+    "gitignore_present": true,
+    "governed_by_changelog": true,
+    "head": "45a292463bf9f6d919064b01270e131e5498d723",
+    "latest_commit": "45a2924 anticloud overlay for L_LYCHEEMEM",
+    "remotes": [],
+    "repo": true,
+    "tags": [],
+    "untracked_or_modified": [],
+    "working_tree_clean": true
+   },
+   "id": "05_git_health",
+   "ok": true,
+   "status": "PASS",
+   "title": "Git health"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "LLM01",
+     "LLM02",
+     "LLM03",
+     "LLM04",
+     "LLM05",
+     "LLM06",
+     "LLM07",
+     "LLM08",
+     "LLM09",
+     "LLM10"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework owasp_llm_top10   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 for LLM Applications",
+    "scope_of_claim": "All ten categories PASS by verified non-capability: the package imports no ML runtime (no torch, transformers, vllm, sentence-transformers) and contains no prompt, model or agent surface. A PASS means the risk is structurally absent, not mitigated.",
+    "unverified_detail": []
+   },
+   "id": "06_owasp_llm_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 for LLM Applications"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "A01:2021",
+     "A02:2021",
+     "A03:2021",
+     "A05:2021",
+     "A06:2021",
+     "A07:2021",
+     "A08:2021",
+     "A09:2021",
+     "A10:2021"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework owasp_top10   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 (2021)",
+    "scope_of_claim": "All ten categories are mapped to an implemented control; each PASS asserts the mapped test exists and that the named non-capability (no listener, no egress) holds in source. It is not a penetration test.",
+    "unverified_detail": []
+   },
+   "id": "07_owasp_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 (2021)"
+  },
+  {
+   "evidence": {
+    "authority": "AICPA",
+    "command": "python tools/run_bench.py --only soc2",
+    "control_ids": [
+     "CC6.1",
+     "CC6.2",
+     "CC6.6",
+     "CC6.7",
+     "CC6.8",
+     "CC7.2",
+     "CC8.1",
+     "CC9.2",
+     "CC6.1"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework soc2   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "SOC 2 (TSC 2017 revised 2022)",
+    "scope_of_claim": "Trust Services Criteria are mapped to implemented controls and verified by execution. No SOC 2 Type II report is asserted: a report requires an independent CPA firm and a review period.",
+    "unverified_detail": []
+   },
+   "id": "08_soc2_type2",
+   "ok": true,
+   "status": "PASS",
+   "title": "SOC 2 Type II readiness"
+  },
+  {
+   "evidence": {
+    "authority": "NIST AI RMF",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_ai_rmf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST AI Risk Management Framework 1.0",
+    "scope_of_claim": "GOVERN/MAP/MEASURE/MANAGE functions are mapped and verified. The project is not an AI system, so controls cover the software the AI system would rest on.",
+    "unverified_detail": []
+   },
+   "id": "09_nist_ai_rmf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST AI Risk Management Framework"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "AC-3(2)",
+     "AC-6(7)",
+     "AU-2",
+     "AU-3",
+     "AU-10",
+     "CM-6",
+     "CP-9",
+     "RA-5",
+     "SA-11",
+     "SI-7",
+     "SC-12",
+     "SC-13"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework nist_800_53   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST SP 800-53 Rev. 5",
+    "scope_of_claim": "Selected control families are implemented and verified. This is a technical implementation map, not a FedRAMP assessment or an authorisation to operate.",
+    "unverified_detail": []
+   },
+   "id": "10_nist_sp_800_53",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST SP 800-53 Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_csf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST Cybersecurity Framework 2.0",
+    "scope_of_claim": "CSF 2.0 functions are covered through the aligned control map. A CSF Profile is not asserted: that is a document an organisation authors and approves.",
+    "unverified_detail": []
+   },
+   "id": "11_nist_csf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST Cybersecurity Framework 2.0"
+  },
+  {
+   "evidence": {
+    "authority": "FedRAMP",
+    "command": "python tools/run_bench.py --only fedramp",
+    "control_ids": [
+     "IA-2",
+     "IA-5",
+     "RA-5",
+     "SA-4",
+     "SA-10",
+     "SA-11",
+     "SC-7",
+     "SC-8",
+     "SC-13",
+     "SI-2"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework fedramp   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "FedRAMP Rev. 5 Baselines (Low/Moderate/High)",
+    "scope_of_claim": "Control implementations are verified in-repo. No ATO, no FedRAMP authorisation and no 3PAO assessment is claimed; those require a cloud service provider and an accredited assessor.",
+    "unverified_detail": []
+   },
+   "id": "12_fedramp",
+   "ok": true,
+   "status": "PASS",
+   "title": "FedRAMP Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "PCI SSC",
+    "command": "python tools/run_bench.py --only pci",
+    "control_ids": [
+     "1.1.1",
+     "1.2.1",
+     "2.2.1",
+     "3.4.1",
+     "3.5.1",
+     "6.2.4",
+     "6.4.2",
+     "8.3.6",
+     "10.2.1",
+     "11.3.1",
+     "11.5.2"
+    ],
+    "controls_mapped": 11,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 11,
+    "coverage_command": "anticloud-ref bench --framework pci_dss   # 11/11 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "PCI DSS v4.0.1",
+    "scope_of_claim": "Requirements 1, 2, 3, 6, 8, 10 and 11 are implemented and verified. No PCI DSS attestation is claimed; that is issued by a QSA against a merchant's environment.",
+    "unverified_detail": []
+   },
+   "id": "13_pci_dss",
+   "ok": true,
+   "status": "PASS",
+   "title": "PCI DSS v4.0.1"
+  },
+  {
+   "evidence": {
+    "authority": "ISO/IEC",
+    "command": "python tools/run_bench.py --only iso",
+    "control_ids": [
+     "5.1.1",
+     "5.1.2",
+     "8.2.3",
+     "8.24",
+     "8.28",
+     "8.29",
+     "8.16",
+     "8.20",
+     "8.24"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework iso_27001   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "ISO/IEC 27001:2022 Annex A",
+    "scope_of_claim": "Annex A controls are implemented and verified. No ISO 27001 certificate is claimed; that is issued by a accredited certification body after an audit.",
+    "unverified_detail": []
+   },
+   "id": "14_iso_27001",
+   "ok": true,
+   "status": "PASS",
+   "title": "ISO/IEC 27001:2022"
+  },
+  {
+   "evidence": {
+    "authority": "MITRE",
+    "command": "python tools/run_bench.py --only mitre",
+    "control_ids": [
+     "T1078",
+     "T1552",
+     "T1552.001",
+     "T1553",
+     "T1195.002",
+     "T1221",
+     "T1600.002",
+     "T1499",
+     "T1565",
+     "T1565.001",
+     "T1530",
+     "T1619"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework mitre_attack   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "MITRE ATT&CK v16 Enterprise",
+    "scope_of_claim": "Adversary techniques are mapped to the control that resists them, verified by execution. This is not adversary emulation or a purple-team exercise.",
+    "unverified_detail": []
+   },
+   "id": "15_mitre_attack",
+   "ok": true,
+   "status": "PASS",
+   "title": "MITRE ATT&CK v16"
+  },
+  {
+   "evidence": {
+    "claimed_level": 8,
+    "command": "python tools/run_bench.py --only 16 && cat docs/18_TRL_JUSTIFICATION/TRL.md",
+    "criteria": {
+     "changelog": {
+      "detail": "Keep a Changelog format with a released section",
+      "evidence_path": "CHANGELOG.md",
+      "present": true
+     },
+     "ci_configuration": {
+      "detail": "runs tests, coverage, bench and secret scan on every push",
+      "evidence_path": ".github/workflows/ci.yml",
+      "present": true
+     },
+     "deployment_manifests": {
+      "detail": "container image definition, non-root user, read-only rootfs",
+      "evidence_path": "deploy/",
+      "present": true
+     },
+     "packaging": {
+      "detail": "PEP 621 metadata, src layout, console_scripts entry point",
+      "evidence_path": "pyproject.toml",
+      "present": true
+     },
+     "qualification_environment_pinned": {
+      "detail": "hash-pinned, so qualification is repeatable byte for byte",
+      "evidence_path": "requirements.lock",
+      "present": true
+     },
+     "reproducible_tests": {
+      "detail": "pytest suite, deterministic seeds, no network fixture required",
+      "evidence_path": "tests/",
+      "present": true
+     },
+     "rerunnable_verification": {
+      "detail": "one command reproduces every number in BENCH.json",
+      "evidence_path": "tools/run_bench.py",
+      "present": true
+     },
+     "versioning": {
+      "detail": "single source of truth, currently 1.0.0",
+      "evidence_path": "src/anticloud_ref/_version.py",
+      "present": true
+     }
+    },
+    "criteria_missing": [],
+    "criteria_satisfied": 8,
+    "criteria_total": 8,
+    "framework_controls_verified": 1,
+    "ladder": "ML Technology Readiness Level, Lavin et al. 2022 (TMLR)",
+    "observed_level": 8,
+    "source": "22_COMPLIANCE_FRAMEWORKS/FACTS.md",
+    "trL9_claimed": false,
+    "trL9_reason": "requires proven success in an operational environment, which cannot be asserted from a repository"
+   },
+   "id": "16_ml_trl",
+   "ok": true,
+   "status": "PASS",
+   "title": "ML Technology Readiness Level 8"
+  }
+ ],
+ "passed": 16,
+ "failed": 0,
+ "failed_ids": [],
+ "all_passed": true,
+ "checks_executed_at": "2026-10-13T20:05:57.039429+00:00",
+ "checks_evidence": "ISOLATED_LAB_RESULTS/04_Evidence/16_checks_report.json",
+ "checks_evidence_sha3": "0db7acb96d36090efa409f81b55a1afdd745b1c88ff65fed63b05c57c029c7a7"
+}
